@@ -1,0 +1,33 @@
+<h1>Sistema de Caixa</h1>
+
+<div class="container">
+    <!-- Seção de Produtos -->
+    <div class="product-list">
+        <h2>Produtos Disponíveis</h2>
+        <div class="product" data-name="1l Leite" data-price="10.00">
+            <img src="img/1l leite.webp" alt="Produto 1">
+            <h3>1l Leite</h3>
+            <p>R$ 10,00</p>
+            <button onclick="addToOrder('1l Leite', 10.00)">Adicionar</button>
+        </div>
+        <div class="product" data-name="Cartela Ovos" data-price="15.50">
+            <img src="img/cartelas de ovos.webp" alt="Produto 2">
+            <h3>Cartela Ovos</h3>
+            <p>R$ 15,50</p>
+            <button onclick="addToOrder('Cartela Ovos', 15.50)">Adicionar</button>
+        </div>
+        <div class="product" data-name="Refri 600ml" data-price="7.25">
+            <img src="img/refri 600ml.webp" alt="Produto 3">
+            <h3>Refri 600ml</h3>
+            <p>R$ 7,25</p>
+            <button onclick="addToOrder('Refri 600ml', 7.25)">Adicionar</button>
+        </div>
+    </div>
+
+    <!-- Seção da Comanda -->
+    <div class="order-list">
+        <h2>Comanda</h2>
+        <ul id="orderItems"></ul>
+        <p id="totalAmount">Total: R$ 0,00</p>
+    </div>
+</div>
